@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            p {
+                background-color: rgb(30, 195, 112);
+                padding: 10px;
+            
+            }
+            span{
+                background-color: #8d72c2;
+                color: black;
+                padding: 10px;
+            }
+            p.km1 {display: none;}
+            p.km2 {display: inline;}
+            p.km3 {display: block;}
+            p.km4 {display: inline-block;}
+            p.km5 {display: flex;}
+        </style>
+        
+    </head>
+    <body>
+        <h1>Megjelenétésit tulajdonság</h1>
+        <h2>display: none</h2>
+        <p class="km1">
+            <span> PTI BSc1</span>
+            <span> PTI BSc2</span>
+            <span> PTI BSc3</span>
+        </p class="km2">
+
+        <h2>display: flex</h2>
+            <span> PTI BSc1</span>
+            <span> PTI BSc2</span>
+            <span> PTI BSc3</span>
+
+        <h2>display: block</h2>
+        <p class="km3">
+            <span> PTI BSc1</span>
+            <span> PTI BSc1</span>
+            <span> PTI BSc1</span>
+            <span> PTI BSc1</span>
+        </p>
+        <h2>display: inline-block</h2>
+        <p class="km4">
+            <span> PTI BSc1</span>
+            <span> PTI BSc2</span>
+            <span> PTI BSc3</span>
+            
+        </p>
+        
+
+    </body>
+</html>
