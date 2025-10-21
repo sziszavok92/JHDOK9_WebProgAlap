@@ -1,0 +1,42 @@
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Fejléc */
+.fejlec {
+  background-color: lightgray;
+  font-style: italic;
+}
+
+/* 1. sor – piros háttér, fehér szöveg */
+.sor1 td:nth-child(1),
+.sor1 td:nth-child(2),
+.sor1 td:nth-child(3) {
+  background-color: red;
+  color: white;
+}
+
+/* 2. sor – halványsárga háttér */
+.sor2 td {
+  background-color: #ffffcc;
+}
+
+/* 3. sor – külön kiemelés középső cellára */
+.sor3 td {
+  background-color: #ffffcc;
+}
+
+.sor3 td:nth-child(2) {
+  background-color: yellow;
+  color: red;
+}
