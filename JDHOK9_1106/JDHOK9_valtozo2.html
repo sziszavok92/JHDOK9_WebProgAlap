@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Változó</title>
+    </head>
+    <body>
+       <h2>JavaScript - műveletek valtozokkal</h2>
+       <p id="szoveg">üdvözlöm nyomja meg a gombot a sorban</p>
+       <button onclick="kiirat()">1.kiiratás</button>
+       <button onclick="szoroz()">2.szorzás</button>
+       <button onclick="vizsgálat()">3.vizsgálat</button>
+
+       <button onclick="változtat()">4.Változtatás</button>
+       <button onclick="kiirat()">6.kiiratás</button>
+       <button onclick="szoroz()">7.szorzás</button>
+       <button onclick="vizsgálat()">8.vizsgálat</button>
+        <script>
+            let szam1 =5;
+            let szam2=10;
+            function kiirat(){
+                document.getElementById("szoveg").innerHTML = "A két változó értékr" + szam1 +"és " + szam2;
+            }
+            function szoroz(){
+                document.getElementById("szoveg").innerHTML = "szorzunk" + szam1*szam2;
+            }
+            function vizsgálat(){
+                if (szam1 > szam2){
+                    document.getElementById("szoveg").innerHTML = szam1 + "nagyobb,mint a " + szam2;
+                }
+                else if (szam2> szam1){
+                    document.getElementById("szoveg").innerHTML = szam2 + "nagyobb, mint a " + szam1;
+                }
+                else
+                {
+                    document.getElementById("szoveg").innerHTML = szam1 + "és" + szam2 + "pontosan egyenlőek";
+                }
+                }
+                function valtoztat(){
+                    szam1 = 200;
+                    szam2 = 150;
+                }
+
+    
+        </script>
+    </body>
+</html>
