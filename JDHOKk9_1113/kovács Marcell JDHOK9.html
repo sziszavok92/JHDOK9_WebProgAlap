@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Időmenedzsment App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Időmenedzsment Segítő</h1>
+        <p>Használj AI-t a produktivitás növeléséhez!</p>
+    </header>
+    
+    <main>
+        <section id="tasks">
+            <h2>Feladatok</h2>
+            <input type="text" id="task-input" placeholder="Add hozzá a feladatot...">
+            <button id="add-task">Hozzáadás</button>
+            <ul id="task-list"></ul>
+        </section>
+        
+        <section id="timer">
+            <h2>Időzítő (Pomodoro)</h2>
+            <div id="timer-display">25:00</div>
+            <button id="start-timer">Indítás</button>
+            <button id="reset-timer">Újraindítás</button>
+        </section>
+        
+        <section id="ai-suggestions">
+            <h2>AI Javaslatok</h2>
+            <button id="get-suggestion">Kérj tippet!</button>
+            <p id="suggestion-text">Kattints a gombra egy AI-tippért.</p>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
