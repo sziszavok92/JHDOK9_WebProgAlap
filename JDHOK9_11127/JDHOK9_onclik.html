@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="HU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tömbökön belüli tömbök ciklusa</h1>
+
+    <div id="jsonJDHOK9">
+
+    </div>
+
+    <script>
+        const BAGObj = {
+            "name": "Hallgató Neve",
+            "age": 20,
+            "cars": [
+                {"name": "Toyota", "models": ["CHR", "Corolla", "Proace"]},
+                {"name": "Ford", "models": ["Kuga", "MONDEO", "Mustang"]},
+                {"name": "BMW", "models": ["320", "X3", "XS"]},
+                {"name": "Fiat", "models": ["500", "Panda", "Tipo"]},
+            ]
+        }
+        
+        for(let i= 0; i < BLObj["cars"].length;i++){
+            const h3 = document.createElement('h3');
+            h3.innerHTML = '<span><b>'$BLOB["cars"][i]["name"])'</b></span>:';
+            jsonJDHOK9.appendChild(h3)
+            
+            const ul = document.createElement('ul');
+            jsonJDHOK9.appendChild(ul);
+
+            jsonJDHOK9.appendChild(h2);
+            for(let j = 0; j < BLObj["cars"][i]["models"].length;j++){
+                const li = document.createElement('li');
+                li.innerHTML = Blobj["cars"][i]["models"][j];
+                ul.appendChild(li);
+             }
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=
+        , initial-scale=1.0">
+        <title>Document</title>
+        <script src="JDHOK9_konyv.json"></script>
+        <script>
+            $(document).ready(function(){
+                $("#p1").click(function(){
+                    $(this).hide();
+                });
+                $("#p2").dblclick(function(){
+                    $(this).hide();
+                });
+                $("#gomb").mouseenter(function(){
+                    alert('A gomb fölé húztad az egeret.');
+                });
+                $("h2").mouseleave(function(){
+                    alert('Elhúztad az egeret a fejlécről.');
+                });
+                $("from ").mousedown(function(){
+                    $(this).css ("border","10px");
+                });
+                $("#nev,#email,#jelszo,p").hover(function(){
+                    //$(this).css("backgraund-color","#91e3ff");
+                }),
+                function(){
+                    //$(this).css("backgraund-color", "#ffffff");
+                }
+                $("#nev,#email,#jelszo").focus(function(){
+                    $(this).css("bacgraund-color","#ff99ff");
+                });
+                $("#nev,#email,#jelszo").focus(function(){
+                    $(this).css("bacgraund-color","#ffffff");
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <h2>JQuery feladatok</h2>
+
+        <p id="p1"> A JQuery egy JavaScript programozói könyvtár amelyet Jhon Resing kezdett fejleszteni. <strong>Kattints ide </strong> és eltűnik!</p>
+        <p id="p2"> Elterjednek tekinthető segíthetővel könnyen bejárhat egy HTML oldal DOM-ja. <strong>Kattints ide duplán </strong> és eltűnik! </p>
+
+        <br>
+        
+        <form style="padding: 10px; width: 500px;">
+            <b>Név:</b> <input id="nev" name="nev"><br><br>
+            <b>E-mail:</b><input id="email" name="nev"><br><br>
+            <b>jelszó:</b> <input id ="jelszo " name="jelszo" type="password"><br><br><br>
+
+            <input type="button" id="gomb" value="jelentkezés">
+        </form>
+        
+    </body>
+</html>

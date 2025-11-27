@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>objektum lekérése</h3>
+    <p id="JDHOK9"></p> 
+
+    <script>
+        const hallgato = {
+            nev: "xy",
+            eletkor: 21,
+            egyetem: "THE",
+            szak: "PTI",
+
+            osszesAdat: function() {
+                return "Név: " + this.nev +
+                       "<br> Életkor: " + this.eletkor +
+                       "<br> Szak: " + this.szak;
+            }
+        };
+
+        function kiir() {
+            document.getElementById("JDHOK9").innerHTML = hallgato.osszesAdat();
+        }
+
+        kiir();
+    </script>
+</body>
+</html>

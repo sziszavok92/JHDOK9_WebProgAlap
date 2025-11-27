@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Objektum Létrehozása </h3>
+        <p id = "JDHOK9"></p>
+
+        <button onclick="kiir()">Adatok Kiíratása</button>
+
+
+        <script>
+            const hallgato = {
+                nev: "km",
+                eletkor: 20,
+                egyetem: "THE",
+                szak: "PTI"
+            };
+
+            function kiir(){
+                document.getElementById("JDHOK9").innerHTML = "<b>Név:</b>" + hallgato.nev + ",<br><b> Életkor: </b>"+ hallgato.eletkor + ",<br><b> Egyetem: </b>" + hallgato.egyetem + ",<br><b>Szak: </b>" + hallgato.szak;
+            }
+        </script>
+        
+    </body>
+</html>
