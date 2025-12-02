@@ -1,0 +1,22 @@
+{
+    "orarend": [
+      {
+        "nap": "Hétfő",
+        "targy": "Programozás alapjai",
+        "idopont": "08:00 - 10:00",
+        "helyszin": "online",
+        "oktato": "Gégény Dávid",
+        "szak": "Programtervező Informatikus"
+      },
+      {
+        "nap": "Kedd",
+        "targy": "Webprogramozás",
+        "idopont": "08:00 - 09:35",
+        "helyszin": "Informatikaterem 124",
+        "oktato": "Dr. Bednarik László",
+        "szak": "Programtervező Informatikus",
+        "tipus": "Gyakorlat"
+      }
+    ]
+   
+  }
