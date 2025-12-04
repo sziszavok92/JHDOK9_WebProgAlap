@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Random szamok</h2>
+    
+    <p id="JDHOK9"></p>
+    
+    <h3>0 és 10 közötti szám generálása </h3>
+    
+    <button onclick="document.getElementById('JDHOK9').innerHTML = Math.floor(Math.random()*10);">Random szám generálása </button>
+    
+    <h3>[0;199[ rendom generált szám</h3>
+
+    <button onclick="document.getElementById('JDHOK9').innerHTML = Math.floor(Math.random()*100)+100;">Random szám generálása </button>
+
+    <h3>Random szám generálása intervallum megadásával</h3>
+    <button onclick="document.getElementById('JDHOK9').innerHTML = random(30,80)"> Random szám generálása</button>
+
+    <script>
+        function random(min, max){
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+</body>
+</html>
